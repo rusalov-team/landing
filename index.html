@@ -49,6 +49,38 @@
               <button class="primary">Explore stays</button>
               <button class="ghost">Talk to us</button>
             </div>
+            <form class="search-form" aria-label="Search stays">
+              <label class="field">
+                <span>Location</span>
+                <select name="location">
+                  <option>All destinations</option>
+                  <option>California</option>
+                  <option>New York</option>
+                  <option>Colorado</option>
+                  <option>Florida</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Check in</span>
+                <input type="date" name="checkin" />
+              </label>
+              <label class="field">
+                <span>Check out</span>
+                <input type="date" name="checkout" />
+              </label>
+              <label class="field">
+                <span>Guests</span>
+                <select name="guests">
+                  <option>2 guests</option>
+                  <option>4 guests</option>
+                  <option>6 guests</option>
+                  <option>8 guests</option>
+                </select>
+              </label>
+              <button class="primary search-button" type="submit">
+                Search stays
+              </button>
+            </form>
             <div class="hero-metrics">
               <div>
                 <p class="metric">4.92</p>
