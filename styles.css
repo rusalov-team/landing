@@ -1037,13 +1037,49 @@ button {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: min(100% - 32px, 1240px);
+  }
+
+  .header-inner {
+    padding: 16px 0;
+    gap: 14px;
+  }
+
   .nav,
-  .header-phone {
+  .header-phone,
+  .header-right .btn-primary {
     display: none;
   }
 
   .mobile-toggle {
     display: flex;
+    margin-left: auto;
+  }
+
+  .site-header--light .nav.open,
+  .nav.open {
+    display: flex;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 16px;
+    right: 16px;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    z-index: 120;
+  }
+
+  .site-header:not(.site-header--light) .nav.open a {
+    color: var(--text);
+  }
+
+  .hero-content {
+    padding: 132px 0 72px;
   }
 
   .hero h1 {
@@ -1054,14 +1090,21 @@ button {
     display: none;
   }
 
+  .hero-sub {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+
   .search-bar {
     flex-direction: column;
     border-radius: var(--radius-lg);
     padding: 20px;
     gap: 0;
+    max-width: 100%;
   }
 
   .search-field {
+    width: 100%;
     padding: 12px 4px;
     border-bottom: 1px solid var(--border);
   }
@@ -1082,6 +1125,7 @@ button {
 
   .hero-stats {
     gap: 16px;
+    flex-wrap: wrap;
   }
 
   .stat strong {
@@ -1097,26 +1141,36 @@ button {
     gap: 20px;
   }
 
-  .homes-grid {
+  .homes-grid,
+  .testimonial-grid,
+  .dest-grid,
+  .owners-split,
+  .owner-hero-grid,
+  .owner-results-grid,
+  .owner-trust-grid,
+  .owner-journey-grid,
+  .owner-services-grid,
+  .listing-card,
+  .listing-card--reverse,
+  .listing-columns,
+  .reviews-grid {
     grid-template-columns: 1fr;
   }
 
-  .testimonial-grid {
-    grid-template-columns: 1fr;
+  .home-meta,
+  .listing-topline,
+  .listing-summary,
+  .review-property-top {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .dest-grid {
-    grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
 
   .dest-card {
-    height: 200px;
-  }
-
-  .owners-split {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    height: 220px;
   }
 
   .footer-inner {
@@ -1128,8 +1182,9 @@ button {
     grid-column: 1 / -1;
   }
 
-  .cta-inner {
-    padding: 48px 24px;
+  .cta-inner,
+  .owner-cta {
+    padding: 36px 24px;
   }
 
   .section {
@@ -1138,6 +1193,53 @@ button {
 
   .hero-scroll {
     display: none;
+  }
+
+  .owner-hero {
+    padding: 120px 0 72px;
+  }
+
+  .owner-hero-actions,
+  .cta-actions,
+  .listing-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .owner-hero-actions a,
+  .cta-actions a,
+  .cta-actions button,
+  .listing-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .owner-floating-card {
+    position: static;
+    max-width: none;
+    margin-top: 16px;
+  }
+
+  .owner-hero-stats,
+  .review-score-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-media img {
+    min-height: 320px;
+  }
+
+  .listing-copy,
+  .review-property-card {
+    padding: 28px 22px;
+  }
+
+  .review-bar-row {
+    grid-template-columns: 1fr 44px;
+  }
+
+  .review-bar {
+    grid-column: 1 / -1;
   }
 }
 
@@ -1567,7 +1669,7 @@ button {
   }
 
   .owner-hero-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .owner-cta {
@@ -1576,47 +1678,6 @@ button {
   }
 }
 
-@media (max-width: 768px) {
-  .site-header--light .nav,
-  .site-header--light .header-phone {
-    display: none;
-  }
-
-  .site-header--light .mobile-toggle {
-    display: flex;
-  }
-
-  .site-header--light .nav.open {
-    display: flex;
-    position: absolute;
-    top: 100%;
-    left: 5vw;
-    right: 5vw;
-    flex-direction: column;
-    gap: 14px;
-    padding: 18px;
-    background: rgba(255,255,255,0.98);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
-  }
-
-  .owner-hero {
-    padding: 120px 0 72px;
-  }
-
-  .owner-cta {
-    padding: 36px 24px;
-  }
-
-  .listing-media img {
-    min-height: 320px;
-  }
-
-  .listing-copy {
-    padding: 28px 22px;
-  }
-}
 
 /* ─── Reviews page ─── */
 .reviews-section {
@@ -1743,28 +1804,6 @@ button {
   }
 }
 
-@media (max-width: 768px) {
-  .review-property-card {
-    padding: 26px 22px;
-  }
-
-  .review-property-top,
-  .review-score-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .review-property-top {
-    display: grid;
-  }
-
-  .review-bar-row {
-    grid-template-columns: 1fr 44px;
-  }
-
-  .review-bar {
-    grid-column: 1 / -1;
-  }
-}
 
 @media (max-width: 480px) {
   .footer-inner {
