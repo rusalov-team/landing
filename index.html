@@ -3,426 +3,275 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>North Coast Stays — Remarkable Vacation Homes</title>
+    <title>Become an Owner — Rusalov Team</title>
     <meta
       name="description"
-      content="Stay in the most remarkable vacation homes across the United States. Curated stays for discerning guests, confident stewardship for owners."
+      content="Become an owner with Rusalov Team. Start, manage, and grow your vacation rental business with expert support, better tools, and low-stress operations."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="#">North Coast Stays</a>
+        <a class="brand" href="#hero">Rusalov Team</a>
         <nav class="nav">
-          <a href="#homes">Homes</a>
-          <a href="#destinations">Destinations</a>
-          <a href="#promise">Our Promise</a>
-          <a href="#owners">Owners</a>
+          <a href="#how">How it works</a>
+          <a href="#results">Results</a>
+          <a href="#faq">FAQ</a>
+          <a href="#cta">Get started</a>
         </nav>
-        <div class="header-right">
-          <a href="tel:+15550114197" class="header-phone">+1 (555) 011-4197</a>
-          <button class="btn-primary btn-sm">Book a stay</button>
-        </div>
-        <button class="mobile-toggle" aria-label="Menu">
+        <a class="btn btn-dark btn-sm desktop-cta" href="#cta">See if you qualify</a>
+        <button class="mobile-toggle" aria-label="Open menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </header>
 
     <main>
-      <!-- Hero -->
-      <section class="hero">
-        <div class="hero-bg">
-          <img
-            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80"
-            alt="Luxury home exterior at golden hour"
-          />
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-          <p class="hero-eyebrow">Curated vacation homes across the US</p>
-          <h1>Stay in the world's most<br />remarkable homes</h1>
-          <p class="hero-sub">
-            Every home is hand-picked, professionally designed, and managed with
-            the care of a boutique hotel.
-          </p>
+      <section class="hero" id="hero">
+        <div class="hero-gradient"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Become an owner</p>
+            <h1>Start, manage, and grow with confidence.</h1>
+            <p class="hero-lead">
+              Whether you're kickstarting a vacation rental business or building a larger
+              portfolio, we help owners earn faster and operate with less stress.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-dark" href="#cta">See if you qualify</a>
+              <a class="btn btn-light" href="#how">How it works</a>
+            </div>
+            <div class="hero-points">
+              <div>
+                <strong>10+ years</strong>
+                <span>industry experience</span>
+              </div>
+              <div>
+                <strong>30,000+</strong>
+                <span>owners supported</span>
+              </div>
+              <div>
+                <strong>$3B+</strong>
+                <span>owner rental income</span>
+              </div>
+            </div>
+          </div>
 
-          <form class="search-bar" aria-label="Search stays">
-            <div class="search-field">
-              <label for="s-location">Where</label>
-              <select id="s-location" name="location">
-                <option>All destinations</option>
-                <option>California</option>
-                <option>New York</option>
-                <option>Colorado</option>
-                <option>Florida</option>
-                <option>Idaho</option>
-              </select>
+          <div class="hero-visual reveal">
+            <img
+              src="https://res.cloudinary.com/evolve-vacation-rental-network/images/w_900,h_554/f_auto,q_auto/v1689373831/evolvevacationrental.com/collage-with-cabin-graphic-cloudinary/collage-with-cabin-graphic-cloudinary.png?_i=AA"
+              alt="Vacation rental owner collage"
+            />
+            <div class="floating-card floating-card-top">
+              <span class="pill">Launch with confidence</span>
+              <p>Pick the right property, get expert setup help, and start earning sooner.</p>
             </div>
-            <div class="search-divider"></div>
-            <div class="search-field">
-              <label for="s-checkin">Check in</label>
-              <input type="date" id="s-checkin" name="checkin" />
-            </div>
-            <div class="search-divider"></div>
-            <div class="search-field">
-              <label for="s-checkout">Check out</label>
-              <input type="date" id="s-checkout" name="checkout" />
-            </div>
-            <div class="search-divider"></div>
-            <div class="search-field">
-              <label for="s-guests">Guests</label>
-              <select id="s-guests" name="guests">
-                <option>2 guests</option>
-                <option>4 guests</option>
-                <option>6 guests</option>
-                <option>8+</option>
-              </select>
-            </div>
-            <button class="search-btn" type="submit">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              <span>Search</span>
-            </button>
-          </form>
-
-          <div class="hero-stats">
-            <div class="stat">
-              <strong>4.92</strong>
-              <span>Average rating</span>
-            </div>
-            <div class="stat-dot"></div>
-            <div class="stat">
-              <strong>150+</strong>
-              <span>Curated homes</span>
-            </div>
-            <div class="stat-dot"></div>
-            <div class="stat">
-              <strong>24/7</strong>
-              <span>Concierge</span>
+            <div class="floating-card floating-card-bottom">
+              <span class="pill pill-dark">Partner with the best</span>
+              <p>Low fees, strong systems, better support, and smarter day-to-day management.</p>
             </div>
           </div>
         </div>
-        <div class="hero-scroll">
-          <span>Scroll to explore</span>
-          <div class="scroll-line"></div>
+      </section>
+
+      <section class="trust-strip">
+        <div class="container trust-grid reveal">
+          <div>
+            <p class="stat-value">10+ years</p>
+            <p class="stat-label">of industry experience</p>
+          </div>
+          <div>
+            <p class="stat-value">30,000+ owners</p>
+            <p class="stat-label">growing businesses across the U.S.</p>
+          </div>
+          <div>
+            <p class="stat-value">$3 billion+</p>
+            <p class="stat-label">in rental income made for owners</p>
+          </div>
         </div>
       </section>
 
-      <!-- Promise -->
-      <section id="promise" class="section promise">
-        <div class="container">
-          <div class="section-intro">
-            <p class="section-eyebrow">Our Promise</p>
-            <h2>No time for average stays</h2>
+      <section class="section split-section" id="how">
+        <div class="container split-layout">
+          <div class="section-copy reveal">
+            <p class="eyebrow">Choose a team you can trust</p>
+            <h2>How it works for you</h2>
             <p class="section-lead">
-              Every home in our collection has been personally visited, rigorously
-              vetted, and styled to meet the standards of the most discerning travelers.
+              We help at every phase of ownership — from getting started, to managing the
+              day-to-day, to expanding your portfolio when the time is right.
             </p>
           </div>
-          <div class="promise-grid">
-            <div class="promise-card reveal">
-              <div class="promise-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+
+          <div class="stacked-cards reveal">
+            <article class="info-card">
+              <img
+                src="https://res.cloudinary.com/evolve-vacation-rental-network/images/w_900,h_680/f_auto,q_auto/v1688753358/evolvevacationrental.com/graphic-of-home-start-with-evolve_346976b2ea/graphic-of-home-start-with-evolve_346976b2ea.png?_i=AA"
+                alt="Start with Evolve illustration"
+              />
+              <div>
+                <h3>Start strong</h3>
+                <p>
+                  Use expert guidance, local partners, and short-term-rental know-how to
+                  choose the right property and launch with confidence.
+                </p>
               </div>
-              <h3>Personally vetted</h3>
-              <p>
-                Our team visits every home. Only 1 in 30 applications meets our
-                criteria for design, comfort, and location.
-              </p>
-            </div>
-            <div class="promise-card reveal">
-              <div class="promise-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </article>
+            <article class="info-card">
+              <img
+                src="https://res.cloudinary.com/evolve-vacation-rental-network/images/w_900,h_680/f_auto,q_auto/v1688753361/evolvevacationrental.com/graphic-of-home-manage-with-evolve_34696f8865/graphic-of-home-manage-with-evolve_34696f8865.png?_i=AA"
+                alt="Manage with Evolve illustration"
+              />
+              <div>
+                <h3>Manage better</h3>
+                <p>
+                  Get hands-on support with listings, pricing, guest experience, permits,
+                  and operations — without carrying all the stress yourself.
+                </p>
               </div>
-              <h3>Design-forward</h3>
-              <p>
-                Professionally styled interiors with curated amenities. Every space
-                tells a story — none feel generic.
-              </p>
-            </div>
-            <div class="promise-card reveal">
-              <div class="promise-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </article>
+            <article class="info-card">
+              <img
+                src="https://res.cloudinary.com/evolve-vacation-rental-network/images/w_900,h_680/f_auto,q_auto/v1688753363/evolvevacationrental.com/graphic-of-home-grow-with-evolve_3469526618/graphic-of-home-grow-with-evolve_3469526618.png?_i=AA"
+                alt="Grow with Evolve illustration"
+              />
+              <div>
+                <h3>Grow your portfolio</h3>
+                <p>
+                  Scale with better data, stronger systems, and support for buying, selling,
+                  or optimizing the next step in your rental business.
+                </p>
               </div>
-              <h3>24/7 concierge</h3>
-              <p>
-                A dedicated local team handles everything — from restaurant
-                reservations to late-night emergencies.
-              </p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- Featured Homes -->
-      <section id="homes" class="section homes">
+      <section class="section services">
         <div class="container">
-          <div class="section-intro">
-            <p class="section-eyebrow">Featured Homes</p>
-            <h2>Handpicked for character</h2>
+          <div class="section-heading reveal">
+            <p class="eyebrow">Partner every step of the way</p>
+            <h2>What owners get</h2>
           </div>
-          <div class="homes-grid">
-            <article class="home-card home-card--large reveal">
-              <div class="home-img">
-                <img
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
-                  alt="Coastal Light House"
-                  loading="lazy"
-                />
-              </div>
-              <div class="home-info">
-                <div class="home-meta">
-                  <span class="home-location">Laguna Beach, CA</span>
-                  <span class="home-price">from <strong>$620</strong> / night</span>
-                </div>
-                <h3>Coastal Light House</h3>
-                <p>3 bedrooms · Ocean view · Sleeps 6</p>
-              </div>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <h3>Team up with experts</h3>
+              <p>Industry insights, property selection support, and professionals who understand vacation rental performance.</p>
             </article>
-            <article class="home-card reveal">
-              <div class="home-img">
-                <img
-                  src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
-                  alt="Desert Quiet"
-                  loading="lazy"
-                />
-              </div>
-              <div class="home-info">
-                <div class="home-meta">
-                  <span class="home-location">Joshua Tree, CA</span>
-                  <span class="home-price">from <strong>$340</strong> / night</span>
-                </div>
-                <h3>Desert Quiet</h3>
-                <p>2 bedrooms · Mountain view · Sleeps 4</p>
-              </div>
+            <article class="service-card reveal">
+              <h3>Design and staging help</h3>
+              <p>Short-term-rental-focused design recommendations that help earn five-star reviews and stronger occupancy.</p>
             </article>
-            <article class="home-card reveal">
-              <div class="home-img">
-                <img
-                  src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80"
-                  alt="Maple Ridge"
-                  loading="lazy"
-                />
-              </div>
-              <div class="home-info">
-                <div class="home-meta">
-                  <span class="home-location">Hudson Valley, NY</span>
-                  <span class="home-price">from <strong>$480</strong> / night</span>
-                </div>
-                <h3>Maple Ridge</h3>
-                <p>4 bedrooms · Forest retreat · Sleeps 8</p>
-              </div>
+            <article class="service-card reveal">
+              <h3>Launch support</h3>
+              <p>Guidance on permits, licensing, taxes, listing setup, and operational readiness before your first guests arrive.</p>
             </article>
-          </div>
-          <div class="section-cta">
-            <a href="#" class="btn-outline">View all homes</a>
+            <article class="service-card reveal">
+              <h3>Low-stress management</h3>
+              <p>Management fees start low and activate after guests check in, keeping the economics more owner-friendly.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Revenue optimization</h3>
+              <p>Data-driven pricing, projection tools, and portfolio insights built to help rentals outperform the market.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Exit optionality</h3>
+              <p>When it’s time to sell, you still have access to resources, agents, and guidance to make the transition easier.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- Destinations -->
-      <section id="destinations" class="section destinations">
-        <div class="container">
-          <div class="section-intro">
-            <p class="section-eyebrow">Destinations</p>
-            <h2>Explore by location</h2>
-          </div>
-          <div class="dest-grid">
-            <a href="#" class="dest-card dest-card--tall reveal">
-              <img
-                src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=800&q=80"
-                alt="California"
-                loading="lazy"
-              />
-              <div class="dest-overlay">
-                <h3>California</h3>
-                <span>42 homes</span>
-              </div>
-            </a>
-            <a href="#" class="dest-card reveal">
-              <img
-                src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=800&q=80"
-                alt="New York"
-                loading="lazy"
-              />
-              <div class="dest-overlay">
-                <h3>New York</h3>
-                <span>38 homes</span>
-              </div>
-            </a>
-            <a href="#" class="dest-card reveal">
-              <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80"
-                alt="Colorado"
-                loading="lazy"
-              />
-              <div class="dest-overlay">
-                <h3>Colorado</h3>
-                <span>29 homes</span>
-              </div>
-            </a>
-            <a href="#" class="dest-card dest-card--tall reveal">
-              <img
-                src="https://images.unsplash.com/photo-1535498730771-e735b998cd64?auto=format&fit=crop&w=800&q=80"
-                alt="Florida"
-                loading="lazy"
-              />
-              <div class="dest-overlay">
-                <h3>Florida</h3>
-                <span>35 homes</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials -->
-      <section class="section testimonials">
-        <div class="container">
-          <div class="section-intro section-intro--light">
-            <p class="section-eyebrow">Guest Reviews</p>
-            <h2>Guests who keep coming back</h2>
-          </div>
-          <div class="testimonial-grid">
-            <article class="testimonial-card reveal">
-              <div class="stars">★★★★★</div>
+      <section class="section results" id="results">
+        <div class="container results-grid">
+          <div class="results-copy reveal">
+            <p class="eyebrow">Real results for real rentals</p>
+            <h2>Owners outperform the market — and they know it.</h2>
+            <p class="section-lead">
+              We’ve helped hundreds of owners create dream portfolios and grow passive
+              income streams with tools, support, and systems designed around vacation rentals.
+            </p>
+            <div class="quote-card">
+              <p class="quote-mark">“</p>
               <blockquote>
-                "Everything felt intentional — the guidebook, the lighting, the
-                scent. It's the most thoughtful stay we've ever had."
+                It was the best decision to join. The business has grown. Everything from setup
+                to bookings has been smooth, efficient, and genuinely supportive.
               </blockquote>
-              <div class="testimonial-author">
-                <div class="author-avatar">M</div>
-                <div>
-                  <strong>Maya Chen</strong>
-                  <span>Guest in Laguna Beach</span>
-                </div>
-              </div>
-            </article>
-            <article class="testimonial-card reveal">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                "The home was pristine, and the local tips were actually good.
-                We felt genuinely looked after the entire trip."
-              </blockquote>
-              <div class="testimonial-author">
-                <div class="author-avatar">E</div>
-                <div>
-                  <strong>Elena Ruiz</strong>
-                  <span>Guest in Carmel</span>
-                </div>
-              </div>
-            </article>
-            <article class="testimonial-card reveal">
-              <div class="stars">★★★★★</div>
-              <blockquote>
-                "We've tried every platform. North Coast is the only one where
-                we arrive and everything is already perfect."
-              </blockquote>
-              <div class="testimonial-author">
-                <div class="author-avatar">J</div>
-                <div>
-                  <strong>James Whitfield</strong>
-                  <span>Guest in Aspen</span>
-                </div>
-              </div>
-            </article>
+              <p class="quote-author">Beverly D. · Owner in Winfield, TN</p>
+            </div>
+          </div>
+          <div class="results-panel reveal">
+            <div class="metric-box">
+              <span>Owners supported</span>
+              <strong>30,000+</strong>
+            </div>
+            <div class="metric-box">
+              <span>Rental income delivered</span>
+              <strong>$3B+</strong>
+            </div>
+            <div class="metric-box metric-box-dark">
+              <span>Built for scale</span>
+              <strong>Start → Manage → Grow</strong>
+              <p>One operating model that supports first properties and multi-home portfolios alike.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Owners -->
-      <section id="owners" class="section owners">
+      <section class="section faq" id="faq">
         <div class="container">
-          <div class="owners-split">
-            <div class="owners-copy reveal">
-              <p class="section-eyebrow">For Homeowners</p>
-              <h2>Your home, our expertise</h2>
-              <p class="section-lead">
-                Join a curated portfolio of the finest vacation homes. We handle
-                everything — from styling and photography to guest management and
-                revenue optimization.
+          <div class="section-heading reveal">
+            <p class="eyebrow">Answers to your top questions</p>
+            <h2>Common owner questions</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item reveal" open>
+              <summary>How is this different from other vacation rental companies?</summary>
+              <p>
+                The model combines expert support, operational help, and technology across the full owner journey — not just one isolated service.
               </p>
-              <div class="owner-steps">
-                <div class="owner-step">
-                  <span class="step-num">01</span>
-                  <div>
-                    <h4>Curate</h4>
-                    <p>We assess your home and create a bespoke styling and amenity plan.</p>
-                  </div>
-                </div>
-                <div class="owner-step">
-                  <span class="step-num">02</span>
-                  <div>
-                    <h4>Prepare</h4>
-                    <p>Professional photography, guidebooks, smart locks, and a clean launch.</p>
-                  </div>
-                </div>
-                <div class="owner-step">
-                  <span class="step-num">03</span>
-                  <div>
-                    <h4>Operate</h4>
-                    <p>Guest comms, dynamic pricing, maintenance, and transparent reporting.</p>
-                  </div>
-                </div>
-                <div class="owner-step">
-                  <span class="step-num">04</span>
-                  <div>
-                    <h4>Grow</h4>
-                    <p>Seasonal strategies and demand modeling to maximize your returns.</p>
-                  </div>
-                </div>
-              </div>
-              <button class="btn-primary">Get a revenue estimate</button>
-            </div>
-            <div class="owners-visual reveal">
-              <div class="owner-stat-card">
-                <p class="owner-stat-label">Average owner revenue increase</p>
-                <p class="owner-stat-value">+34%</p>
-                <p class="owner-stat-sub">in the first 12 months</p>
-              </div>
-              <div class="owner-stat-card">
-                <p class="owner-stat-label">Owner satisfaction</p>
-                <p class="owner-stat-value">4.96</p>
-                <div class="owner-stars">★★★★★</div>
-              </div>
-              <div class="owner-stat-card owner-stat-card--dark">
-                <p class="owner-stat-label">Net revenue this month</p>
-                <p class="owner-stat-value">$43,800</p>
-                <div class="owner-bar-chart">
-                  <div class="bar" style="height: 40%"></div>
-                  <div class="bar" style="height: 55%"></div>
-                  <div class="bar" style="height: 45%"></div>
-                  <div class="bar" style="height: 70%"></div>
-                  <div class="bar" style="height: 85%"></div>
-                  <div class="bar bar--active" style="height: 95%"></div>
-                </div>
-              </div>
-            </div>
+            </details>
+            <details class="faq-item reveal">
+              <summary>How is this different from Airbnb or Vrbo?</summary>
+              <p>
+                Airbnb and Vrbo are marketplaces. This is a management-led approach that helps owners operate and optimize rentals, including listings across major marketplaces.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>What types of owners is this best for?</summary>
+              <p>
+                It works for first-time buyers, hands-off investors, and experienced operators who want better systems, support, and portfolio growth options.
+              </p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>What happens before my property starts earning?</summary>
+              <p>
+                You get guidance on setup, readiness, compliance, and launch so your property goes live with a stronger foundation and less guesswork.
+              </p>
+            </details>
           </div>
         </div>
       </section>
 
-      <!-- CTA Banner -->
-      <section class="section cta-banner">
-        <div class="container">
-          <div class="cta-inner reveal">
-            <h2>Ready for a remarkable stay?</h2>
+      <section class="section cta" id="cta">
+        <div class="container cta-shell reveal">
+          <div>
+            <p class="eyebrow">Let’s create your success story</p>
+            <h2>Ready to become an owner?</h2>
             <p>
-              Browse our collection of hand-picked homes or speak with our
-              concierge team to plan your perfect trip.
+              If you’re exploring your first vacation rental or looking to grow a portfolio,
+              we can help you take the next step with more clarity and less friction.
             </p>
-            <div class="cta-actions">
-              <button class="btn-primary btn-lg">Explore homes</button>
-              <a href="tel:+15550114197" class="btn-outline btn-lg">Call us</a>
-            </div>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-dark" href="mailto:hello@rusalov.team">Talk to the team</a>
+            <a class="btn btn-light" href="#hero">Back to top</a>
           </div>
         </div>
       </section>
@@ -430,30 +279,16 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div class="footer-brand">
-          <p class="logo">North Coast Stays</p>
-          <p>Curated vacation homes and management across the United States.</p>
+        <div>
+          <a class="brand brand-footer" href="#hero">Rusalov Team</a>
+          <p>Vacation rental growth, operations, and owner support.</p>
         </div>
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <a href="#homes">Featured homes</a>
-          <a href="#destinations">Destinations</a>
-          <a href="#promise">Our promise</a>
+        <div class="footer-links">
+          <a href="#how">How it works</a>
+          <a href="#results">Results</a>
+          <a href="#faq">FAQ</a>
+          <a href="#cta">Get started</a>
         </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <a href="#owners">For owners</a>
-          <a href="#">About us</a>
-          <a href="#">Careers</a>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <a href="mailto:hello@northcoaststays.com">hello@northcoaststays.com</a>
-          <a href="tel:+15550114197">+1 (555) 011-4197</a>
-        </div>
-      </div>
-      <div class="container footer-bottom">
-        <p>&copy; 2026 North Coast Stays. All rights reserved.</p>
       </div>
     </footer>
 

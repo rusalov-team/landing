@@ -1,15 +1,20 @@
-// Header scroll effect
 const header = document.querySelector('.site-header');
+const mobileToggle = document.querySelector('.mobile-toggle');
+const nav = document.querySelector('.nav');
 
 const onScroll = () => {
-  header.classList.toggle('scrolled', window.scrollY > 60);
+  if (!header) return;
+  header.classList.toggle('scrolled', window.scrollY > 12);
 };
 
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
-// Reveal on scroll
-const reveals = document.querySelectorAll('.reveal');
+if (mobileToggle && nav) {
+  mobileToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+}
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -20,32 +25,17 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+  { threshold: 0.12 }
 );
 
-reveals.forEach((el, i) => {
-  el.style.transitionDelay = `${i % 3 * 100}ms`;
-  observer.observe(el);
-});
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-// Mobile menu toggle
-const toggle = document.querySelector('.mobile-toggle');
-const nav = document.querySelector('.nav');
-
-if (toggle) {
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    toggle.classList.toggle('active');
-  });
-}
-
-// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener('click', (e) => {
+  link.addEventListener('click', (event) => {
     const target = document.querySelector(link.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    if (!target) return;
+    event.preventDefault();
+    nav?.classList.remove('open');
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
