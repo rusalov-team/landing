@@ -537,6 +537,7 @@ button {
   box-shadow: var(--shadow-sm);
   transition: all var(--transition);
   cursor: pointer;
+  display: block;
 }
 
 .home-card:hover {
@@ -582,6 +583,7 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
+  gap: 16px;
 }
 
 .home-location {
@@ -1209,7 +1211,8 @@ button {
 .owner-trust-card,
 .owner-journey-card,
 .owner-service,
-.owner-faq-item {
+.owner-faq-item,
+.listing-card {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -1312,7 +1315,9 @@ button {
 .owner-service h3,
 .owner-quote blockquote,
 .owner-faq-item summary,
-.owner-cta h2 {
+.owner-cta h2,
+.listing-copy h2,
+.listing-columns h3 {
   font-family: var(--font-serif);
 }
 
@@ -1413,13 +1418,146 @@ button {
   color: var(--gold-light);
 }
 
+/* ─── Homes page ─── */
+.homes-detail {
+  background: var(--white);
+}
+
+.homes-detail-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.listing-card {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  overflow: hidden;
+}
+
+.listing-card--reverse {
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.listing-card--reverse .listing-media {
+  order: 2;
+}
+
+.listing-card--reverse .listing-copy {
+  order: 1;
+}
+
+.listing-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+}
+
+.listing-copy {
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.listing-topline,
+.listing-summary {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.listing-topline {
+  margin-bottom: 12px;
+}
+
+.listing-location,
+.listing-rating {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.listing-location {
+  color: var(--gold);
+}
+
+.listing-rating {
+  color: var(--text-muted);
+}
+
+.listing-copy h2 {
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  line-height: 1.08;
+  margin-bottom: 12px;
+}
+
+.listing-summary {
+  margin-bottom: 18px;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.listing-description {
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.8;
+  margin-bottom: 26px;
+}
+
+.listing-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.listing-columns h3 {
+  font-size: 1.18rem;
+  margin-bottom: 12px;
+}
+
+.listing-bullets {
+  display: grid;
+  gap: 10px;
+  padding-left: 18px;
+  color: var(--text-muted);
+}
+
+.listing-bullets li::marker {
+  color: var(--gold);
+}
+
+.listing-bullets--tight {
+  gap: 8px;
+}
+
+.listing-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.homes-comparison {
+  background: var(--cream);
+}
+
 @media (max-width: 1024px) {
   .owner-hero-grid,
   .owner-results-grid,
   .owner-trust-grid,
   .owner-journey-grid,
-  .owner-services-grid {
+  .owner-services-grid,
+  .listing-card,
+  .listing-card--reverse,
+  .listing-columns {
     grid-template-columns: 1fr;
+  }
+
+  .listing-card--reverse .listing-media,
+  .listing-card--reverse .listing-copy {
+    order: initial;
   }
 
   .owner-floating-card {
@@ -1469,6 +1607,14 @@ button {
 
   .owner-cta {
     padding: 36px 24px;
+  }
+
+  .listing-media img {
+    min-height: 320px;
+  }
+
+  .listing-copy {
+    padding: 28px 22px;
   }
 }
 
