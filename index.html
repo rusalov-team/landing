@@ -39,80 +39,48 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero">
-        <div class="hero-bg">
-          <img
-            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80"
-            alt="Luxury home exterior at golden hour"
-          />
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-          <p class="hero-eyebrow">Curated vacation homes in Pittsburgh</p>
-          <h1>Stay in remarkable<br />Pittsburgh homes</h1>
-          <p class="hero-sub">
-            Discover our thoughtfully prepared homes in Pittsburgh — professionally managed,
-            beautifully presented, and ready for work trips, family visits, and city stays.
-          </p>
-
-          <form class="search-bar" aria-label="Search stays">
-            <div class="search-field">
-              <label for="s-location">Where</label>
-              <select id="s-location" name="location">
-                <option>All destinations</option>
-                <option>California</option>
-                <option>New York</option>
-                <option>Colorado</option>
-                <option>Florida</option>
-                <option>Idaho</option>
-              </select>
+      <section class="hero hero--editorial">
+        <div class="container hero-editorial-grid">
+          <div class="hero-copy reveal">
+            <p class="hero-eyebrow hero-eyebrow--dark">Pittsburgh homes</p>
+            <h1>Beautiful places to stay in Pittsburgh.</h1>
+            <p class="hero-sub hero-sub--dark">
+              A small collection of design-forward homes for city breaks, work trips,
+              family visits, and longer stays — with the trust of proven Airbnb performance.
+            </p>
+            <div class="hero-actions">
+              <a href="homes.html" class="btn-primary">Browse homes</a>
+              <a href="reviews.html" class="btn-outline">Read reviews</a>
             </div>
-            <div class="search-divider"></div>
-            <div class="search-field">
-              <label for="s-checkin">Check in</label>
-              <input type="date" id="s-checkin" name="checkin" />
-            </div>
-            <div class="search-divider"></div>
-            <div class="search-field">
-              <label for="s-checkout">Check out</label>
-              <input type="date" id="s-checkout" name="checkout" />
-            </div>
-            <div class="search-divider"></div>
-            <div class="search-field">
-              <label for="s-guests">Guests</label>
-              <select id="s-guests" name="guests">
-                <option>2 guests</option>
-                <option>4 guests</option>
-                <option>6 guests</option>
-                <option>8+</option>
-              </select>
-            </div>
-            <button class="search-btn" type="submit">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              <span>Search</span>
-            </button>
-          </form>
-
-          <div class="hero-stats">
-            <div class="stat">
-              <strong>4.92</strong>
-              <span>Average rating</span>
-            </div>
-            <div class="stat-dot"></div>
-            <div class="stat">
-              <strong>150+</strong>
-              <span>Curated homes</span>
-            </div>
-            <div class="stat-dot"></div>
-            <div class="stat">
-              <strong>24/7</strong>
-              <span>Concierge</span>
+            <div class="hero-stats hero-stats--dark">
+              <div class="stat">
+                <strong>178</strong>
+                <span>Airbnb reviews</span>
+              </div>
+              <div class="stat-dot"></div>
+              <div class="stat">
+                <strong>4.88</strong>
+                <span>Average rating</span>
+              </div>
+              <div class="stat-dot"></div>
+              <div class="stat">
+                <strong>2</strong>
+                <span>Homes live now</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="hero-scroll">
-          <span>Scroll to explore</span>
-          <div class="scroll-line"></div>
+          <div class="hero-gallery reveal">
+            <img
+              class="hero-gallery-main"
+              src="https://a0.muscache.com/im/pictures/hosting/Hosting-1556212642153795728/original/cdaaddb3-f204-4f8a-ab9f-3b91c28d09c1.jpeg?im_w=1600&quality=80&auto=webp"
+              alt="Squirrel Hill Chic apartment in Pittsburgh"
+            />
+            <img
+              class="hero-gallery-side"
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1215987370576249011/original/8360b7d2-faa7-49e1-b375-3b0c79c580a3.jpeg?im_w=1200&quality=80&auto=webp"
+              alt="South Side Flat apartment in Pittsburgh"
+            />
+          </div>
         </div>
       </section>
 
@@ -228,58 +196,39 @@
         </div>
       </section>
 
-      <!-- Destinations -->
-      <section id="destinations" class="section destinations">
+      <!-- Editorial Gallery -->
+      <section class="section destinations editorial-gallery">
         <div class="container">
-          <div class="section-intro">
-            <p class="section-eyebrow">Destinations</p>
-            <h2>Explore by location</h2>
+          <div class="section-intro section-intro--wide">
+            <p class="section-eyebrow">Inside the collection</p>
+            <h2>Large, bright spaces with a cleaner visual language</h2>
+            <p class="section-lead">
+              The homes are presented with generous photography, straightforward layouts,
+              and a calmer white canvas — closer to a modern editorial travel site.
+            </p>
           </div>
-          <div class="dest-grid">
-            <a href="#" class="dest-card dest-card--tall reveal">
+          <div class="editorial-grid">
+            <div class="editorial-tile editorial-tile--large reveal">
               <img
-                src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?auto=format&fit=crop&w=800&q=80"
-                alt="California"
+                src="https://a0.muscache.com/im/pictures/hosting/Hosting-1556212642153795728/original/cdaaddb3-f204-4f8a-ab9f-3b91c28d09c1.jpeg?im_w=1600&quality=80&auto=webp"
+                alt="Bright Pittsburgh apartment interior"
                 loading="lazy"
               />
-              <div class="dest-overlay">
-                <h3>California</h3>
-                <span>42 homes</span>
-              </div>
-            </a>
-            <a href="#" class="dest-card reveal">
+            </div>
+            <div class="editorial-tile reveal">
               <img
-                src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=800&q=80"
-                alt="New York"
+                src="https://a0.muscache.com/im/pictures/miso/Hosting-1215987370576249011/original/8360b7d2-faa7-49e1-b375-3b0c79c580a3.jpeg?im_w=1200&quality=80&auto=webp"
+                alt="Modern living area in Pittsburgh stay"
                 loading="lazy"
               />
-              <div class="dest-overlay">
-                <h3>New York</h3>
-                <span>38 homes</span>
-              </div>
-            </a>
-            <a href="#" class="dest-card reveal">
+            </div>
+            <div class="editorial-tile reveal">
               <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80"
-                alt="Colorado"
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+                alt="Bedroom styling inspiration"
                 loading="lazy"
               />
-              <div class="dest-overlay">
-                <h3>Colorado</h3>
-                <span>29 homes</span>
-              </div>
-            </a>
-            <a href="#" class="dest-card dest-card--tall reveal">
-              <img
-                src="https://images.unsplash.com/photo-1535498730771-e735b998cd64?auto=format&fit=crop&w=800&q=80"
-                alt="Florida"
-                loading="lazy"
-              />
-              <div class="dest-overlay">
-                <h3>Florida</h3>
-                <span>35 homes</span>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
